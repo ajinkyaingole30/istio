@@ -47,8 +47,6 @@ $ cd /root/istio-1.0.0
 ```
 Configure Istio CRD( Custom Resource Definitions)
 
-Custom resources. A resource is an endpoint in the Kubernetes API that stores a collection of API objects of a certain kind; for example, the built-in pods resource contains a collection of Pod objects. ... It represents a customization of a particular Kubernetes installation.
-Istio has extended Kubernetes via Custom Resource Definitions (CRD). Deploy the extensions by applying crds.yaml.
 ```
 $kubectl apply -f install/kubernetes/helm/istio/templates/crds.yaml -n istio-system
 ```
@@ -67,7 +65,6 @@ All the services are deployed as Pods.
 ```
 Kubectl get pods -n istio-system 
 ```
-
 
 Deploy Katacoda Service
 
